@@ -1,19 +1,14 @@
+:: Build script for the scotch (CLI tools) output.
+:: Re-runs cmake since rattler-build outputs don't share build dirs.
 set BISON_PKGDATADIR=%BUILD_PREFIX%\Library\share\winflexbison\data\
 
-:: MSVC is preferred.
 set CC=cl.exe
 set CXX=cl.exe
-
-if "%mpi%"=="impi-devel" (
-  set "CMAKE_ARGS=%CMAKE_ARGS% -D MPI_C_ADDITIONAL_INCLUDE_DIRS=%LIBRARY_PREFIX%\include"
-  set "CMAKE_ARGS=%CMAKE_ARGS% -D MPI_C_LIBRARIES=impi"
-)
 
 if "%mpi%"=="nompi" (
   set "CMAKE_ARGS=%CMAKE_ARGS% -D BUILD_PTSCOTCH=OFF"
 )
 
-:: Only set pthreads paths when not using MKL build (nomkl means pthreads-win32 is available)
 if not "%mklbuild%"=="mkl" (
   set "CMAKE_ARGS=%CMAKE_ARGS% -D THREADS_PTHREADS_INCLUDE_DIR=%LIBRARY_INC%"
   set "CMAKE_ARGS=%CMAKE_ARGS% -D THREADS_PTHREADS_WIN32_LIBRARY:FILEPATH=%LIBRARY_LIB%\pthread.lib"
@@ -34,7 +29,7 @@ cmake ^
   %SRC_DIR%
 if errorlevel 1 exit 1
 
-cmake --build ./build --config Release --verbose
+cmake --build ./build --config Release
 if errorlevel 1 exit 1
-cmake --install ./build --component=libscotch
+cmake --install ./build --component=scotch
 if errorlevel 1 exit 1
