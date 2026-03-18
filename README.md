@@ -11,6 +11,24 @@ Home: https://www.labri.fr/perso/pelegrin/scotch/
 
 Package license: CECILL-C
 
+Summary: PT-SCOTCH: (Parallel) Static Mapping, Graph, Mesh and Hypergraph Partitioning, and Parallel and Sequential Sparse Matrix Ordering Package
+
+Development: https://gitlab.inria.fr/scotch/scotch
+
+Documentation: http://gforge.inria.fr/docman/?group_id=248&dirid=326
+
+Software package and libraries for sequential and parallel
+graph partitioning, static mapping and clustering, sequential
+mesh and hypergraph partitioning, and sequential and parallel
+sparse matrix block ordering.
+
+About libscotch
+---------------
+
+Home: https://www.labri.fr/perso/pelegrin/scotch/
+
+Package license: CECILL-C
+
 Summary: SCOTCH: Static Mapping, Graph, Mesh and Hypergraph Partitioning, and Parallel and Sequential Sparse Matrix Ordering Package
 
 Development: https://gitlab.inria.fr/scotch/scotch
@@ -22,24 +40,23 @@ graph partitioning, static mapping and clustering, sequential
 mesh and hypergraph partitioning, and sequential and parallel
 sparse matrix block ordering.
 
+About scotch
+------------
 
-About libptscotch
------------------
+Home: https://www.labri.fr/perso/pelegrin/scotch/
 
+Package license: CECILL-C
 
+Summary: SCOTCH: Static Mapping, Graph, Mesh and Hypergraph Partitioning, and Parallel and Sequential Sparse Matrix Ordering Package
 
-Package license: 
+Development: https://gitlab.inria.fr/scotch/scotch
 
-Summary: PT-SCOTCH: (Parallel) Static Mapping, Graph, Mesh and Hypergraph Partitioning, and Parallel and Sequential Sparse Matrix Ordering Package
+Documentation: http://gforge.inria.fr/docman/?group_id=248&dirid=326
 
-About ptscotch
---------------
-
-
-
-Package license: 
-
-Summary: PT-SCOTCH: (Parallel) Static Mapping, Graph, Mesh and Hypergraph Partitioning, and Parallel and Sequential Sparse Matrix Ordering Package
+Software package and libraries for sequential and parallel
+graph partitioning, static mapping and clustering, sequential
+mesh and hypergraph partitioning, and sequential and parallel
+sparse matrix block ordering.
 
 Current build status
 ====================
@@ -213,6 +230,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>win_64_intsize32mpinompi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1889&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/scotch-feedstock?branchName=main&jobName=win&configuration=win%20win_64_intsize32mpinompi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64_intsize64mpiimpi-devel</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1889&branchName=main">
@@ -224,6 +248,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1889&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/scotch-feedstock?branchName=main&jobName=win&configuration=win%20win_64_intsize64mpimsmpi" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_intsize64mpinompi</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1889&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/scotch-feedstock?branchName=main&jobName=win&configuration=win%20win_64_intsize64mpinompi" alt="variant">
                 </a>
               </td>
             </tr>

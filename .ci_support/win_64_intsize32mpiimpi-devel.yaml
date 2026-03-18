@@ -14,14 +14,14 @@ fortran_compiler:
 - flang
 fortran_compiler_version:
 - '19'
+impi_devel:
+- 2021.16.0
 intsize:
 - '32'
 liblzma_devel:
 - '5'
-libptscotch:
-- 7.0.8
-libscotch:
-- 7.0.8
+mklbuild:
+- nomkl
 mpi:
 - impi-devel
 mpich:
@@ -30,5 +30,8 @@ openmpi:
 - '5'
 target_platform:
 - win-64
+zip_keys:
+- - mpi
+  - mklbuild
 zlib:
 - '1'

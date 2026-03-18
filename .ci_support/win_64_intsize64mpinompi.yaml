@@ -21,9 +21,11 @@ intsize:
 liblzma_devel:
 - '5'
 mklbuild:
+- mkl
 - nomkl
 mpi:
-- msmpi
+- nompi
+- nompi
 mpich:
 - '4'
 openmpi:

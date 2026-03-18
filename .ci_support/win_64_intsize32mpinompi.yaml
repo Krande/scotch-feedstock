@@ -17,13 +17,15 @@ fortran_compiler_version:
 impi_devel:
 - 2021.16.0
 intsize:
-- '64'
+- '32'
 liblzma_devel:
 - '5'
 mklbuild:
+- mkl
 - nomkl
 mpi:
-- msmpi
+- nompi
+- nompi
 mpich:
 - '4'
 openmpi:

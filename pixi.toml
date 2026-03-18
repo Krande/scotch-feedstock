@@ -1,0 +1,202 @@
+# -*- mode: toml -*-
+# This file was generated automatically from conda-smithy. To update this configuration,
+# update the conda-forge.yml and/or the recipe/meta.yaml.
+"$schema" = "https://pixi.sh/v0.59.0/schema/manifest/schema.json"
+
+[workspace]
+name = "scotch-feedstock"
+version = "3.56.3"  # conda-smithy version used to generate this file
+description = "Pixi configuration for conda-forge/scotch-feedstock"
+authors = ["@conda-forge/scotch"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "linux-aarch64", "linux-ppc64le", "osx-64", "win-64"]
+requires-pixi = ">=0.59.0"
+
+[dependencies]
+conda-build = ">=24.1"
+conda-forge-ci-setup = "4.*"
+rattler-build = "*"
+
+[tasks.inspect-all]
+cmd = "inspect_artifacts --all-packages"
+description = "List contents of all packages found in rattler-build build directory."
+[tasks.build]
+cmd = "rattler-build build --recipe recipe"
+description = "Build scotch-feedstock directly (without setup scripts), no particular variant specified"
+[tasks."build-linux_64_intsize32mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_intsize32mpimpich.yaml"
+description = "Build scotch-feedstock with variant linux_64_intsize32mpimpich directly (without setup scripts)"
+[tasks."inspect-linux_64_intsize32mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_intsize32mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_64_intsize32mpimpich"
+[tasks."build-linux_64_intsize32mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_intsize32mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant linux_64_intsize32mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-linux_64_intsize32mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_intsize32mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_64_intsize32mpiopenmpi"
+[tasks."build-linux_64_intsize64mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_intsize64mpimpich.yaml"
+description = "Build scotch-feedstock with variant linux_64_intsize64mpimpich directly (without setup scripts)"
+[tasks."inspect-linux_64_intsize64mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_intsize64mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_64_intsize64mpimpich"
+[tasks."build-linux_64_intsize64mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_64_intsize64mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant linux_64_intsize64mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-linux_64_intsize64mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_64_intsize64mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_64_intsize64mpiopenmpi"
+[tasks."build-linux_aarch64_intsize32mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_intsize32mpimpich.yaml"
+description = "Build scotch-feedstock with variant linux_aarch64_intsize32mpimpich directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_intsize32mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_intsize32mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_aarch64_intsize32mpimpich"
+[tasks."build-linux_aarch64_intsize32mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_intsize32mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant linux_aarch64_intsize32mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_intsize32mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_intsize32mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_aarch64_intsize32mpiopenmpi"
+[tasks."build-linux_aarch64_intsize64mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_intsize64mpimpich.yaml"
+description = "Build scotch-feedstock with variant linux_aarch64_intsize64mpimpich directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_intsize64mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_intsize64mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_aarch64_intsize64mpimpich"
+[tasks."build-linux_aarch64_intsize64mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_aarch64_intsize64mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant linux_aarch64_intsize64mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-linux_aarch64_intsize64mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_aarch64_intsize64mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_aarch64_intsize64mpiopenmpi"
+[tasks."build-linux_ppc64le_intsize32mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_intsize32mpimpich.yaml"
+description = "Build scotch-feedstock with variant linux_ppc64le_intsize32mpimpich directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_intsize32mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_intsize32mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_ppc64le_intsize32mpimpich"
+[tasks."build-linux_ppc64le_intsize32mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_intsize32mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant linux_ppc64le_intsize32mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_intsize32mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_intsize32mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_ppc64le_intsize32mpiopenmpi"
+[tasks."build-linux_ppc64le_intsize64mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_intsize64mpimpich.yaml"
+description = "Build scotch-feedstock with variant linux_ppc64le_intsize64mpimpich directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_intsize64mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_intsize64mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_ppc64le_intsize64mpimpich"
+[tasks."build-linux_ppc64le_intsize64mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/linux_ppc64le_intsize64mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant linux_ppc64le_intsize64mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-linux_ppc64le_intsize64mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/linux_ppc64le_intsize64mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant linux_ppc64le_intsize64mpiopenmpi"
+[tasks."build-osx_64_intsize32mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_intsize32mpimpich.yaml"
+description = "Build scotch-feedstock with variant osx_64_intsize32mpimpich directly (without setup scripts)"
+[tasks."inspect-osx_64_intsize32mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_intsize32mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_64_intsize32mpimpich"
+[tasks."build-osx_64_intsize32mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_intsize32mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant osx_64_intsize32mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-osx_64_intsize32mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_intsize32mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_64_intsize32mpiopenmpi"
+[tasks."build-osx_64_intsize64mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_intsize64mpimpich.yaml"
+description = "Build scotch-feedstock with variant osx_64_intsize64mpimpich directly (without setup scripts)"
+[tasks."inspect-osx_64_intsize64mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_intsize64mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_64_intsize64mpimpich"
+[tasks."build-osx_64_intsize64mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_64_intsize64mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant osx_64_intsize64mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-osx_64_intsize64mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_64_intsize64mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_64_intsize64mpiopenmpi"
+[tasks."build-osx_arm64_intsize32mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_intsize32mpimpich.yaml"
+description = "Build scotch-feedstock with variant osx_arm64_intsize32mpimpich directly (without setup scripts)"
+[tasks."inspect-osx_arm64_intsize32mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_intsize32mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_arm64_intsize32mpimpich"
+[tasks."build-osx_arm64_intsize32mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_intsize32mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant osx_arm64_intsize32mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-osx_arm64_intsize32mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_intsize32mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_arm64_intsize32mpiopenmpi"
+[tasks."build-osx_arm64_intsize64mpimpich"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_intsize64mpimpich.yaml"
+description = "Build scotch-feedstock with variant osx_arm64_intsize64mpimpich directly (without setup scripts)"
+[tasks."inspect-osx_arm64_intsize64mpimpich"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_intsize64mpimpich.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_arm64_intsize64mpimpich"
+[tasks."build-osx_arm64_intsize64mpiopenmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/osx_arm64_intsize64mpiopenmpi.yaml"
+description = "Build scotch-feedstock with variant osx_arm64_intsize64mpiopenmpi directly (without setup scripts)"
+[tasks."inspect-osx_arm64_intsize64mpiopenmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/osx_arm64_intsize64mpiopenmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant osx_arm64_intsize64mpiopenmpi"
+[tasks."build-win_64_intsize32mpiimpi-devel"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_intsize32mpiimpi-devel.yaml"
+description = "Build scotch-feedstock with variant win_64_intsize32mpiimpi-devel directly (without setup scripts)"
+[tasks."inspect-win_64_intsize32mpiimpi-devel"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_intsize32mpiimpi-devel.yaml"
+description = "List contents of scotch-feedstock packages built for variant win_64_intsize32mpiimpi-devel"
+[tasks."build-win_64_intsize32mpimsmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_intsize32mpimsmpi.yaml"
+description = "Build scotch-feedstock with variant win_64_intsize32mpimsmpi directly (without setup scripts)"
+[tasks."inspect-win_64_intsize32mpimsmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_intsize32mpimsmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant win_64_intsize32mpimsmpi"
+[tasks."build-win_64_intsize32mpinompi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_intsize32mpinompi.yaml"
+description = "Build scotch-feedstock with variant win_64_intsize32mpinompi directly (without setup scripts)"
+[tasks."inspect-win_64_intsize32mpinompi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_intsize32mpinompi.yaml"
+description = "List contents of scotch-feedstock packages built for variant win_64_intsize32mpinompi"
+[tasks."build-win_64_intsize64mpiimpi-devel"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_intsize64mpiimpi-devel.yaml"
+description = "Build scotch-feedstock with variant win_64_intsize64mpiimpi-devel directly (without setup scripts)"
+[tasks."inspect-win_64_intsize64mpiimpi-devel"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_intsize64mpiimpi-devel.yaml"
+description = "List contents of scotch-feedstock packages built for variant win_64_intsize64mpiimpi-devel"
+[tasks."build-win_64_intsize64mpimsmpi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_intsize64mpimsmpi.yaml"
+description = "Build scotch-feedstock with variant win_64_intsize64mpimsmpi directly (without setup scripts)"
+[tasks."inspect-win_64_intsize64mpimsmpi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_intsize64mpimsmpi.yaml"
+description = "List contents of scotch-feedstock packages built for variant win_64_intsize64mpimsmpi"
+[tasks."build-win_64_intsize64mpinompi"]
+cmd = "rattler-build build --recipe recipe -m .ci_support/win_64_intsize64mpinompi.yaml"
+description = "Build scotch-feedstock with variant win_64_intsize64mpinompi directly (without setup scripts)"
+[tasks."inspect-win_64_intsize64mpinompi"]
+cmd = "inspect_artifacts --recipe-dir recipe -m .ci_support/win_64_intsize64mpinompi.yaml"
+description = "List contents of scotch-feedstock packages built for variant win_64_intsize64mpinompi"
+
+[feature.smithy.dependencies]
+conda-smithy = "*"
+[feature.smithy.tasks.build-locally]
+cmd = "python ./build-locally.py"
+description = "Build packages locally using the same setup scripts used in conda-forge's CI"
+[feature.smithy.tasks.smithy]
+cmd = "conda-smithy"
+description = "Run conda-smithy. Pass necessary arguments."
+[feature.smithy.tasks.rerender]
+cmd = "conda-smithy rerender"
+description = "Rerender the feedstock."
+[feature.smithy.tasks.lint]
+cmd = "conda-smithy lint --conda-forge recipe"
+description = "Lint the feedstock recipe"
+
+[environments]
+smithy = ["smithy"]
+
+# This is a copy of default, to be enabled by build_steps.sh during Docker builds
+# __PLATFORM_SPECIFIC_ENV__ = []
