@@ -26,10 +26,14 @@ intsize:
 - '32'
 liblzma_devel:
 - '5'
+libptscotch:
+- 7.0.11
+libscotch:
+- 7.0.11
 mpi:
 - mpich
 mpich:
-- '4'
+- '5'
 openmpi:
 - '5'
 target_platform:

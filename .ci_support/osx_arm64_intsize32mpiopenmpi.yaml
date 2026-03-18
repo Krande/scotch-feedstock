@@ -28,12 +28,16 @@ intsize:
 - '32'
 liblzma_devel:
 - '5'
+libptscotch:
+- 7.0.11
+libscotch:
+- 7.0.11
 macos_machine:
 - arm64-apple-darwin20.0.0
 mpi:
 - openmpi
 mpich:
-- '4'
+- '5'
 openmpi:
 - '5'
 target_platform:
