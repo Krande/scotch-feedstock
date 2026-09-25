@@ -29,14 +29,14 @@ index acda708..e73bb10 100644
    int                 o;
 +  const size_t        ointval = (size_t) ((char *) contextvaluesdat.vinttab - (char *) &contextvaluesdat);
 +  const size_t        odblval = (size_t) ((char *) contextvaluesdat.vdbltab - (char *) &contextvaluesdat);
-
+ 
    o = contextValuesInit (contptr, &contextvaluesdat, sizeof (contextvaluesdat),
 -                         CONTEXTOPTIONNUMNBR, (byte *) &contextvaluesdat.vinttab - (byte *) &contextvaluesdat,
 -                         CONTEXTOPTIONDBLNBR, (byte *) &contextvaluesdat.vdbltab - (byte *) &contextvaluesdat);
 +                         CONTEXTOPTIONNUMNBR, ointval,
 +                         CONTEXTOPTIONDBLNBR, odblval);
-
+ 
    if (o == 0) {                                   /* If values array allocated, update it with existing environment variables */
      INT                 deteval;
---
+-- 
 2.49.0
